@@ -1,0 +1,88 @@
+.nontechstuff
+  display: flex
+  flex-direction: column
+  width: 900px
+  height: auto
+  .banner-container
+    display: flex
+    height: 200px
+    .banner
+      display: flex
+      width: 900px
+      height: auto
+      background:
+        image: url(/assets/images/nontech_banner.svg)
+        size: contain
+        repeat: no-repeat
+
+  .article-container
+    display: flex
+    flex-direction: column
+    background: $lightgrey
+    border: 1px solid $darkgrey
+    border-radius: 4px
+    margin-top: 12px
+    p
+      font-family: $mainfont
+      font-weight: 500
+      font-size: 14px
+      line-height: 20px
+    .article
+      display: flex
+      flex-direction: column
+      align-self: center
+      padding: 35px 0
+      width: 740px
+
+
+
+@media (max-width: 915px)
+  .nontechstuff
+    display: block
+    width: 100%
+    .banner-container
+      width: 90%
+      margin: auto
+      height: 160px
+
+    .article-container
+      width: 90%
+      margin: auto
+      .article
+        display: flex
+        margin: auto
+        width: 90%
+
+@media (max-width: 920px)
+  .banner-container
+    height: 200px !important
+@media (max-width: 820px)
+  .banner-container
+    height: 180px !important
+@media (max-width: 720px)
+  .banner-container
+    height: 160px !important
+@media (max-width: 620px)
+  .banner-container
+    height: 140px !important
+@media (max-width: 530px)
+  .banner-container
+    height: 120px !important
+@media (max-width: 420px)
+  .banner-container
+    height: 100px !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//url(/assets/images/tech_banner.svg)
