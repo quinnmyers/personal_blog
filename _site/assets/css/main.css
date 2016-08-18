@@ -446,7 +446,7 @@ textarea {
     .home .newest-content .nc-banner {
       display: -ms-flexbox;
       display: flex;
-      width: 325px;
+      width: 310px;
       background: #D8D8D8;
       border: 1px solid #979797;
       border-radius: 4px; }
@@ -462,7 +462,7 @@ textarea {
           margin: 0;
           font-family: "Raleway", sans-serif;
           font-weight: bold;
-          font-size: 18px;
+          font-size: 16px;
           letter-spacing: 1px;
           color: #292F36; }
       .home .newest-content .nc-banner .cta-links {
@@ -483,7 +483,7 @@ textarea {
         .home .newest-content .nc-banner .cta-links .all-non p {
           font-family: "Raleway", sans-serif;
           color: #292F36;
-          font-size: 9px;
+          font-size: 8px;
           font-weight: bold;
           letter-spacing: 1px; }
     .home .newest-content .article-container {
@@ -538,8 +538,11 @@ textarea {
     .home .home-banner {
       display: block !important; }
       .home .home-banner .avatar-container {
-        display: block !important;
-        margin: auto !important; }
+        margin: auto !important;
+        width: 250px; }
+        .home .home-banner .avatar-container .avatar {
+          width: 60% !important;
+          height: 100% !important; }
       .home .home-banner .intro-container {
         margin: auto !important;
         max-width: 100% !important;
@@ -681,7 +684,7 @@ textarea {
     .mobile-nav ul li {
       font-weight: bold; }
 
-@media (max-width: 900px) {
+@media (max-width: 935px) {
   h2 {
     font-size: 36px !important; }
   li {
@@ -691,7 +694,7 @@ textarea {
     li a {
       font-size: 14px !important; } }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   .header {
     display: -ms-flexbox;
     display: flex;
@@ -1035,7 +1038,7 @@ textarea {
       width: 100%;
       -ms-flex-align: center;
           align-items: center; }
-      .nontechstuff .nontech-intro-container .test .intro-avatar {
+      .nontechstuff .nontech-intro-container .test .intro-avatar-container {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
@@ -1045,7 +1048,7 @@ textarea {
         border: 1px solid #979797;
         border-radius: 4px;
         background: #D8D8D8; }
-        .nontechstuff .nontech-intro-container .test .intro-avatar .avatar {
+        .nontechstuff .nontech-intro-container .test .intro-avatar-container .intro-avatar {
           height: 100px;
           width: 100px;
           -ms-flex-item-align: center;
@@ -1106,12 +1109,12 @@ textarea {
       width: 740px; }
 
 @media (max-width: 600px) {
-  .intro-avatar {
+  .intro-avatar-container {
     height: 100px !important;
     width: 100px !important; }
-  .avatar {
-    height: 75px !important;
-    width: 75px !important; }
+    .intro-avatar-container .intro-avatar {
+      height: 75px !important;
+      width: 75px !important; }
   .nontech-intro-text {
     display: -ms-flexbox;
     display: flex;
@@ -1181,6 +1184,144 @@ textarea {
     font-size: 8px !important;
     font-weight: 600 !important;
     line-height: 15px !important; } }
+
+.whoami {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 900px;
+  height: auto; }
+  .whoami .whoami-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 100%;
+    height: auto; }
+    .whoami .whoami-container .about-avatartext-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      height: 380px;
+      width: 350px; }
+      .whoami .whoami-container .about-avatartext-container .about-avatar-container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin: auto;
+        height: 350px;
+        width: 350px;
+        background: #D8D8D8;
+        border: 1px solid #979797;
+        border-radius: 4px; }
+      .whoami .whoami-container .about-avatartext-container .about-avatar {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin: auto;
+        height: 275px;
+        width: 275px;
+        background-image: url(/assets/images/avatar.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .whoami .whoami-container .about-avatartext-container .about-social {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 80px;
+        width: 350px; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-website,
+        .whoami .whoami-container .about-avatartext-container .about-social .s-twitter,
+        .whoami .whoami-container .about-avatartext-container .about-social .s-github,
+        .whoami .whoami-container .about-avatartext-container .about-social .s-discord,
+        .whoami .whoami-container .about-avatartext-container .about-social .s-dribbble {
+          height: 50px;
+          width: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-twitter {
+          background-image: url(/assets/images/s_icons/s_twitter_icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-website {
+          background-image: url(/assets/images/s_icons/s_website_icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-dribbble {
+          background-image: url(/assets/images/s_icons/s_dribble_icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-discord {
+          background-image: url(/assets/images/s_icons/s_discord_icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+        .whoami .whoami-container .about-avatartext-container .about-social .s-github {
+          background-image: url(/assets/images/s_icons/s_github_icon.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain; }
+    .whoami .whoami-container .whoami-text-container {
+      width: 58%;
+      height: auto;
+      background: #D8D8D8;
+      border: 1px solid #979797;
+      border-radius: 4px; }
+      .whoami .whoami-container .whoami-text-container .whoami-text {
+        padding: 20px; }
+        .whoami .whoami-container .whoami-text-container .whoami-text p {
+          font-family: "Raleway", sans-serif;
+          font-weight: bold;
+          font-size: 12px;
+          letter-spacing: 1px;
+          line-height: 20px; }
+
+@media (max-width: 920px) {
+  .whoami-container {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important; }
+    .whoami-container .whoami-text-container {
+      margin-top: 20px !important;
+      width: 90% !important;
+      margin-bottom: 20px; } }
+
+@media (max-width: 500px) {
+  .about-social {
+    height: 60px !important;
+    width: 300px !important;
+    margin: auto !important; }
+    .about-social .s-website,
+    .about-social .s-twitter,
+    .about-social .s-github,
+    .about-social .s-discord,
+    .about-social .s-dribbble {
+      height: 40px !important;
+      width: 40px !important; } }
+
+@media (max-width: 360px) {
+  .about-avatartext-container {
+    width: 100% !important; }
+    .about-avatartext-container .about-avatar-container {
+      height: 300px !important;
+      width: 300px !important; }
+    .about-avatartext-container .about-avatar {
+      height: 250px !important;
+      width: 250px !important; } }
 
 .home-wrap {
   display: -ms-flexbox;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="50px" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>website icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tech-stuff" transform="translate(-180.000000, -616.000000)">
+            <g id="Group-2" transform="translate(160.000000, 601.000000)">
+                <g id="Group-3">
+                    <g id="social-icons" transform="translate(20.885333, 15.000000)">
+                        <g id="website-icon">
+                            <path d="M24.6262001,50 C38.2268748,50 49.2524002,38.8071187 49.2524002,25 C49.2524002,11.1928813 38.2268748,0 24.6262001,0 C11.0255253,0 0,11.1928813 0,25 C0,38.8071187 11.0255253,50 24.6262001,50 Z" id="Oval-5" fill="#D8D8D8"></path>
+                            <text id="www" font-family="AndaleMono, Andale Mono" font-size="14" font-weight="normal" letter-spacing="1.83555543" fill="#292F36">
+                                <tspan x="10" y="29">www</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

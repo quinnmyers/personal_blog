@@ -1,0 +1,132 @@
+.whoami
+  display: flex
+  flex-direction: column
+  width: 900px
+  height: auto
+  .whoami-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: auto
+    .about-avatartext-container
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      height: 380px
+      width: 350px
+      .about-avatar-container
+        display: flex
+        align-self: center
+        margin: auto
+        height: 350px
+        width: 350px
+        background: $lightgrey
+        border: 1px solid $darkgrey
+        border-radius: 4px
+      .about-avatar
+        display: flex
+        align-self: center
+        margin: auto
+        height: 275px
+        width: 275px
+        background:
+          image: url(/assets/images/avatar.svg)
+          size: contain
+          repeat: no-repeat
+          position: center
+      .about-social
+        display: flex
+        justify-content: space-around
+        height: 80px
+        width: 350px
+        .s-website,
+        .s-twitter,
+        .s-github,
+        .s-discord,
+        .s-dribbble,
+          height: 50px
+          width: 50px
+          align-self: center
+        .s-twitter
+          background:
+            image: url(/assets/images/s_icons/s_twitter_icon.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+        .s-website
+          background:
+            image: url(/assets/images/s_icons/s_website_icon.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+        .s-dribbble
+          background:
+            image: url(/assets/images/s_icons/s_dribble_icon.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+        .s-discord
+          background:
+            image: url(/assets/images/s_icons/s_discord_icon.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+        .s-github
+          background:
+            image: url(/assets/images/s_icons/s_github_icon.svg)
+            repeat: no-repeat
+            position: center
+            size: contain
+
+    .whoami-text-container
+      width: 58%
+      height: auto
+      background: $lightgrey
+      border: 1px solid $darkgrey
+      border-radius: 4px
+      .whoami-text
+        padding: 20px
+        p
+          font-family: $mainfont
+          font-weight: bold
+          font-size: 12px
+          letter-spacing: 1px
+          line-height: 20px
+
+
+
+@media (max-width: 920px)
+  .whoami-container
+    flex-direction: column !important
+    .whoami-text-container
+      margin-top: 20px !important
+      width: 90% !important
+      margin-bottom: 20px
+
+
+
+@media (max-width: 500px)
+  .about-social
+    height: 60px !important
+    width: 300px !important
+    margin: auto !important
+    .s-website,
+    .s-twitter,
+    .s-github,
+    .s-discord,
+    .s-dribbble,
+      height: 40px !important
+      width: 40px !important
+
+
+@media (max-width: 360px)
+  .about-avatartext-container
+    width: 100% !important
+    .about-avatar-container
+      height: 300px !important
+      width: 300px !important
+    .about-avatar
+      height: 250px !important
+      width: 250px !important
