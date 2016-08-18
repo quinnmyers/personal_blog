@@ -55,24 +55,26 @@
 
 .mobile-nav
   display: none
-  height: 180px
+  height: 150px
   width: 100%
   color: $gunmetal
   background: $green
   font-family: $mainfont
   justify-content: flex-end
   ul
-    margin-top: 30px
+    margin: 0
     list-style: none
     right: 0
     align-self: center
     margin-bottom: 0
     text-align: right
-    li:nth-child(2)
+    a, li:nth-child(2)
       margin-top: 30px
       margin-bottom: 30px
-    li
+    a, li
       font-weight: bold
+      text-decoration: none
+      color: $gunmetal
 
 
 
@@ -95,14 +97,18 @@
     display: flex
     justify-content: space-between !important
     flex-direction: row
+    position: relative
 
   .logo
     h2
       font-size: 28px !important
   .nav
     display: none !important
+
   .hamburger
     display: flex !important
 
   .is-active
     display: flex !important
+    flex: 0 !important
+    position: relative
